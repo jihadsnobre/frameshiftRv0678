@@ -13,7 +13,7 @@ WHO_mut: Genotypic data featuring sample IDs and detailed mutation characteristi
 WHO_pheno: Phenotypic data corresponding to the samples, sourced from WHO_pheno.txt on the WHO catalogue github.
 WHO-UCN-TB-2023.5-eng.xlsx: excel file extracted from the WHO catalogue, detailing protein-level mutations related to bedaquiline and their interpretations based on the WHO catalogue algorithm.
 WHO_nt_info.xlsx: Can be found in the WHO catalogue 2023 update, this file provides  nucleotide information necessary for analyzing late stop codons and calculating alignment scores.
-MGIT_database.xlsx contains isolates extracted from the literature with available MIC in MGIT
+MGIT_database (second sheet of the supplementary tables) contains isolates extracted from the literature with available MIC in MGIT
 
 Python Scripts for analysis on stop codons and alignement scores
 
