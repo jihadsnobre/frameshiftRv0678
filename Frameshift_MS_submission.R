@@ -280,7 +280,7 @@ library(readxl)
 library(dplyr)
 library(ggplot2)
 
-MGIT <- read_excel("MGIT_databaset_sequence_sixframes_stop_align.xlsx")
+MGIT <- read_excel("MGIT_database_sequence_sixframes_stop_align.xlsx")
 
 MGIT_filtered_not_truncated <- MGIT %>%
   filter(Truncated == "no")
