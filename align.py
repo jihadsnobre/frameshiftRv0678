@@ -3,7 +3,7 @@ from Bio import pairwise2
 from Bio.Seq import Seq
 
 # Load the dataset from Excel
-excel_file = "/Users/jihadsnobre1/Library/CloudStorage/OneDrive-ITG/PhD/computationalproteomics/databases/Claudio_fs_sequence_sixframes_stop.xlsx"
+excel_file = "/Users/jihadsnobre1/Library/CloudStorage/OneDrive-ITG/PhD/computationalproteomics/databases/WHO_nt_info_fs_sequence_sixframes_stop.xlsx"
 df = pd.read_excel(excel_file)
 
 # Define the wild-type sequence
@@ -25,7 +25,7 @@ for frame_column in frame_columns:
     df[f"{frame_column}_alignment"] = df[frame_column].apply(calculate_conservation)
 
 # Write the updated dataframe to a new Excel file
-output_excel_file = "/Users/jihadsnobre1/Library/CloudStorage/OneDrive-ITG/PhD/computationalproteomics/databases/Claudio_fs_sequence_sixframes_stop_align.xlsx"
+output_excel_file = "/Users/jihadsnobre1/Library/CloudStorage/OneDrive-ITG/PhD/computationalproteomics/databases/WHO_nt_info_fs_sequence_sixframes_stop_align.xlsx"
 df.to_excel(output_excel_file, index=False)
 
 print(f"Results written to {output_excel_file}")
