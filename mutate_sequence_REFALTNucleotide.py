@@ -26,7 +26,7 @@ df = pd.read_excel(file_path)
 wild_type_sequence = "gtgagcgtcaacgacggggtcgatcagatgggcgccgagcccgacatcatggaattcgtcgaacagatgggcggctatttcgagtccaggagtttgactcggttggcgggtcgattgttgggctggctgctggtgtgtgatcccgagcggcagtcctcggaggaactggcgacggcgctggcggccagcagcggggggatcagcaccaatgcccggatgctgatccaatttgggttcattgagcggctcgcggtcgccggggatcggcgcacctatttccggttgcggcccaacgctttcgcggctggcgagcgtgaacgcatccgggcaatggccgaactgcaggacctggctgacgtggggctgagggcgctgggcgacgccccgccgcagcgaagccgacggctgcgggagatgcgggatctgttggcatatatggagaacgtcgtctccgacgccctggggcgatacagccagcgaaccggagaggacgactga"
 
 # Apply the substitution function to each row in the dataframe
-df['MUTATED_SEQUENCE'] = df.apply(lambda row: substitute_nucleotides(wild_type_sequence, row['Nucleotide'], row['REF'], row['ALT']), axis=1)
+df['Mutated_Sequence'] = df.apply(lambda row: substitute_nucleotides(wild_type_sequence, row['Nucleotide'], row['REF'], row['ALT']), axis=1)
 
 # Optionally, save the modified dataframe to a new Excel file
 output_file_path = '/Users/jihadsnobre1/Library/CloudStorage/OneDrive-ITG/PhD/computationalproteomics/databases/WHO_nt_info_fs_sequence.xlsx'
