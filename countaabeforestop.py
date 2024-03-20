@@ -16,7 +16,7 @@ def count_aa_before_stop(seq):
             return stop_index
 
 # Read in the Excel file
-df = pd.read_excel('/Users/jihadsnobre1/Library/CloudStorage/OneDrive-ITG/PhD/computationalproteomics/databases/Claudio_fs_sequence_sixframes.xlsx')
+df = pd.read_excel('/Users/jihadsnobre1/Library/CloudStorage/OneDrive-ITG/PhD/computationalproteomics/databases/WHO_nt_info_fs_sequence_sixframes.xlsx')
 
 # Create new columns for the amino acid counts
 df['frame 1 aa count'] = df['frame 1'].apply(count_aa_before_stop)
@@ -27,5 +27,5 @@ df['frame 5 aa count'] = df['frame 5'].apply(count_aa_before_stop)
 df['frame 6 aa count'] = df['frame 6'].apply(count_aa_before_stop)
 
 # Write the output to a new Excel file
-df.to_excel('/Users/jihadsnobre1/Library/CloudStorage/OneDrive-ITG/PhD/computationalproteomics/databases/Claudio_fs_sequence_sixframes_stop.xlsx', index=False)
+df.to_excel('/Users/jihadsnobre1/Library/CloudStorage/OneDrive-ITG/PhD/computationalproteomics/databases/WHO_nt_info_fs_sequence_sixframes_stop.xlsx', index=False)
 
