@@ -174,8 +174,8 @@ WHO_frames <- WHO_frames %>%
   mutate(Nucleotide = position - 778989)
 
 WHO_frames <- WHO_frames %>%
-  mutate(reference_nucleotide = tolower(reference_nucleotide), 
-         alternative_nucleotide = tolower(alternative_nucleotide))
+  mutate(REF = tolower(reference_nucleotide), 
+         ALT = tolower(alternative_nucleotide))
 
 writexl::write_xlsx(WHO_frames, "WHO_nt_info_fs.xlsx")
 
