@@ -7,7 +7,7 @@ warnings.simplefilter('ignore', BiopythonWarning)
 
 
 # Load the original excel file
-df = pd.read_excel("/Users/jihadsnobre1/Library/CloudStorage/OneDrive-ITG/PhD/computationalproteomics/databases/Claudio_fs_sequence.xlsx")
+df = pd.read_excel("/Users/jihadsnobre1/Library/CloudStorage/OneDrive-ITG/PhD/computationalproteomics/databases/WHO_nt_info_fs_sequence.xlsx")
 df["Mutated_Sequence"] = df["Mutated_Sequence"].astype(str)
 
 
@@ -43,4 +43,4 @@ for i, row in df.iterrows():
     df.at[i, "frame 6"] = frame_6
 
 # Save the modified dataframe to a new excel file
-df.to_excel("/Users/jihadsnobre1/Library/CloudStorage/OneDrive-ITG/PhD/computationalproteomics/databases/Claudio_fs_sequence_sixframes.xlsx", index=False)
+df.to_excel("/Users/jihadsnobre1/Library/CloudStorage/OneDrive-ITG/PhD/computationalproteomics/databases/WHO_nt_info_fs_sequence_sixframes.xlsx", index=False)
